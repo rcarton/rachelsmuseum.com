@@ -1,0 +1,288 @@
+/*
+    red: #c54a4a
+*/
+
+@import "constants.less";
+
+html, body {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+}
+
+.skrollable {
+    /*
+     * First-level skrollables are positioned relative to window
+     */
+    position:fixed;
+
+    /*
+     * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+     */
+    z-index:100;
+}
+
+/*
+.skrollable.unrendered {
+    display:none !important;
+}
+*/
+
+.skrollable .skrollable {
+    /*
+     * Second-level skrollables are positioned relative their parent skrollable
+     */
+    position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+    /*
+     * Third-level (and below) skrollables are positioned static
+     */
+    position:static;
+}
+
+
+
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'museo_sans_500regular', sans-serif;
+    min-width: 1300px;
+}
+
+body {
+    background-image: url(../img/background-side.png);
+    background-attachment: fixed;
+}
+h1, h2, h3, h4 {
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-weight: normal;
+}
+
+.red {
+    color: #c54a4a;
+}
+
+#left {
+    width: 325px;
+    height: 100%;
+    text-align: right;
+    padding: 0 12px;
+    position: fixed;
+    float: left;
+    box-shadow: inset rgba(0, 0, 0, 0.48) -3px 0px 6px -4px;
+}
+
+
+#left h1 {
+    margin: 0 0 18px 0px;
+    padding-top: 34px;
+    color: #C54A4A;
+    font-size: 51px;
+    font-weight: normal;
+    width: 155px;
+    line-height: 42.5px;
+    text-align: right;
+    clear: both;
+    float: right;
+}
+
+#right {
+    position: relative;
+    margin-left: 349px;
+    background-color: white;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;*/
+    /*height: 100%;*/
+}
+
+#frames {
+    background-image: url(../img/title-frames.png);
+    background-repeat: no-repeat;
+    width: 707px;
+    height: 719px;
+    background-position: 0 -121px;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -353px;
+    list-style-type: none;
+}
+
+#frames li {
+    position: absolute;
+    font-family: 'BebasNeueRegular', sans-serif;
+    display: block;
+    text-align: center;
+}
+
+#frames-museum-experience {
+    top: 155px;
+    left: 92px;
+    font-size: 52px;
+    width: 179px;
+    line-height: 43px;
+}
+
+#frames-education {
+    top: 457px;
+    left: 98px;
+    font-size: 52px;
+    line-height: 43px;
+}
+
+#frames-languages {
+    top: 143px;
+    left: 501px;
+    font-size: 33px;
+}
+
+#frames-extra-curricular-activities {
+    top: 430px;
+    left: 459px;
+    font-size: 52px;
+    width: 200px;
+}
+
+#frames-extra-curricular-activities .l1 {
+    line-height: 40px;
+}
+#frames-extra-curricular-activities .l2 {
+    font-size: 28px;
+    line-height: 17px;
+}
+#frames-extra-curricular-activities .l3 {
+    font-size: 28px;
+    line-height: 27px;
+}
+
+
+#begin-the-tour {
+    width: 166px;
+    height: 60px;
+    background-color: black;
+    background-image: url(../img/begin-arrow.png);
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: 107px;
+    color: white;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 31px;
+    padding: 1px 0 0;
+    text-align: center;
+    background-position: 50% 85%;
+    z-index: 80;
+    box-shadow: rgba(0, 0, 0, 0.41) 0px 5px 2px -2px;
+}
+
+#wires-top {
+    background-image: url(../img/wires-top.png);
+    width: 119px;
+    height: 41px;
+    left: @wirespadding;
+    margin-left: 180px;
+}
+
+#wires {
+    background-image: url(../img/wires.png);
+    width: 119px;
+    height: 10000px;
+    left: @wirespadding;
+    margin-left: 180px;
+    margin-top: 41px;
+}
+
+.plaque {
+    border: 1px solid #707070;
+    left: 58%;
+    width: 330px;
+    box-shadow: rgba(0, 0, 0, 0.341176) 0px 3px 2px -2px;
+    
+    .plaque-header { border-bottom: 1px solid #CECECE; padding: 4px 4px 4px 7px; }
+    .plaque-header h2 { margin: 0 0 0 0; font-size: 40px; line-height: 40px; }
+    .plaque-content { padding: 7px 4px; }
+     
+    .dates {
+        font-family: 'BebasNeueRegular', sans-serif;
+        font-size: 23px;
+        padding: 0px;
+        display: inline-block;
+        margin-top: -7px;
+        margin-right: 3px;
+    }
+    
+    .title {
+        display: inline-block;
+        color: #ACACAC;
+        padding: 0;
+    }
+}
+
+#experience-cma {
+    background-image: url(../img/experience-cma.png);
+    width: 381px;
+    height: 219px;
+    left: @wirespadding;
+    margin-left: 47px;
+}
+
+#experience-amam {
+    background-image: url(../img/experience-amam.png);
+    width: 201px;
+    height: 240px;
+    left: @wirespadding;
+    margin-top: 239px;
+    margin-left: 140px;
+}
+
+#experience-amam-plaque {
+    margin-top: 259px;
+}
+
+#experience-ohc {
+    background-image: url(../img/experience-ohc.png);
+    width: 256px;
+    height: 156px;
+    left: @wirespadding;
+    margin-top: 495px;
+    margin-left: 111px;
+}
+
+#experience-ohc-plaque {
+    margin-top: 489px;
+}
+
+
+#transform {
+  width: 70%;
+  left: 50%;
+  top: 20%;
+  margin-left: -35%;
+  text-align: center;
+  font-size: 150%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+#properties {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#bg-white {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
