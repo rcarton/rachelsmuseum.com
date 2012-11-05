@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Rachel's Museum - Online Resume</title>
     <meta name="description" content="Online resume of Rachel Luczkowski">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
@@ -20,25 +20,43 @@
 
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <div id="left">
 
     <h1>RACHEL'S MUSEUM</h1>
     <p style="clear:both;">Hello, my name is <span class="red">Rachel Luczkowski</span><br>this is my online resume</p>
     
     <nav>
+        <div id="nav-pointer" data-0="opacity: 0;top: 0%;"
+                              data-3500="opacity: 1;top: 0%;"
+                              data-6000="top: 25%;"
+                              data-8500="top: 50%;"
+                              data-10400="top: 75%;"
+        > </div>
         <ul>
-            <li>Museum Experience</li>
-            <li>Education</li>
-            <li>Languages</li>
-            <li>Other Activities</li>
+            <li><a href="/experience">Museum Experience</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/languages">Languages</a></li>
+            <li><a href="/activities">Other Activities</a></li>
        </ul> 
     </nav>
     
-    <div id="contact-me">contact me here</div>
+    <div id="contact-me">contact me: <a href=""  target="_blank" class="email-icon email"></a> <a class="linked-in-icon" target="_blank" href="http://www.linkedin.com/in/rachelluczkowski"></a>
+    <br><br><div class="fb-like" style="text-align:right; clear:both;" data-href="http://rachelsmuseum.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-action="recommend"></div>
     </div>
+        
+</div>
     
     <div id="right">
-        
         <div id="bg-white" data-0="top:0%;" data-end="top:0%;"></div>
         
         <ul id="frames" data-0="opacity: 1;">
@@ -47,8 +65,21 @@
             <li id="frames-languages">Languages</li>
             <li id="frames-extra-curricular-activities"><div class="l1">Extra</div><div class="l2">Curricular</div><div class="l3">Activities</div></li>
         </ul>
-   
-        <div id="begin-the-tour" data-0="opacity: 1; top: 700px;" data-400="opacity: 0;">Begin the tour</div>
+    
+        <div id="arrow-up"
+                data-0="opacity: 0;"
+                data-4000="opacity: 0;"
+                data-4500="opacity: 1;"
+        > </div>
+        <div id="arrow-down"
+                data-0="opacity: 0;"
+                data-800="opacity: 1;"
+                data-9000="opacity: 1;"
+                data-9600="opacity: 0;"
+        > </div>
+    
+    
+        <div id="begin-the-tour" data-0="opacity: 1; bottom: 5%;" data-400="opacity: 0;">Begin the tour</div>
         
         <!-- <div id="wires-top" data-0="top: 1000px;" data-1100="top: 100px;" data-1900="top: 100px;" data-2200="top: -200px;"></div>
         <div id="wires" data-0="top: 1000px;" data-1100="top: 100px;" data-1900="top: 100px;" data-2200="top: -200px;"></div>-->
@@ -79,7 +110,7 @@
             
             <div class="plaque-content">
                 <div style="text-align: center;"><img src="img/experience-cma-logo.png" alt="Cleveland Museum of Art logo" /></div>
-                I led tours of the museum, investigated college docent programs, and researched and wrote family tours for an iPad application.
+                I led tours of the <a href="http://www.clevelandart.org/">museum</a>, investigated college docent programs, and researched and wrote family tours for an iPad application.
             </div>
         </div>
         
@@ -94,7 +125,7 @@
                                                        data-_experience-3500="top: -200%;">         
             <div class="plaque-content">
                 <div style="text-align: center;"><img src="img/experience-amam-logo.png" alt="Allen Memorial Art Museum" /></div>
-                I led tours of the museum and Weltzheimer Johnson house, co-directed two youth art summer camps, helped with the organization of Oberlin’s Chalk Walk, and researched and wrote self-guided tours.
+                I led tours of the <a href="http://www2.oberlin.edu/amam/">museum</a> and <a href="http://www.oberlin.edu/amam/flwright.html">Weltzheimer Johnson house</a>, co-directed two youth art summer camps, helped with the organization of Oberlin’s Chalk Walk, and researched and wrote self-guided tours.
             </div>
         </div>
 
@@ -110,7 +141,7 @@
                                                        data-_experience-3500="top: -200%;">         
             <div class="plaque-content">
                 <div style="text-align: center;"><img src="img/experience-ohc-logo.png" alt="Oberlin Heritage Center" /></div>
-                I led tours of the Oberlin Heritage Center facilities, co-directed a youth architecture summer camp, and researched and put together the “Oberlin Then and Now” virtual exhibit.
+                I led tours of the <a href="http://www.oberlinheritage.org/">Oberlin Heritage Center</a> facilities, co-directed a youth architecture summer camp, and researched and put together the “Oberlin Then and Now” virtual exhibit.
             </div>
         </div>
 
@@ -170,14 +201,9 @@
         
         <!-- Activities -->
         <div id="activities-frame" data-_activities="top: 100%;"
-                                 data-_activities-300="top: 8%;"
-                                 data-_activities-1500="top: 8%;"
-                                 data-_activities-2500="top: -200%;"></div>
+                                 data-_activities-300="top: 8%;"></div>
         
-        <div id="activities-plaque" class="plaque" data-_activities-300="top: 100%;"
-                                                       data-_activities-600="top: 12%;"
-                                                       data-_activities-1500="top: 12%;"
-                                                       data-_activities-2500="top: -200%;">
+        <div id="activities-plaque" class="plaque" data-_activities-300="top: 100%;" data-_activities-600="top: 12%;">
                                                        
             <div class="plaque-header">
                 <h2>Activities</h2>
@@ -189,18 +215,26 @@
             </div>
         </div>   
         
-        <div id="activities-other" data-_activities="top: 100%;"
-                                 data-_activities-300="top: 8%;"
-                                 data-_activities-1500="top: 8%;"
-                                 data-_activities-2500="top: -200%;"></div>
-                                 
-                                 
+        <div id="activities-other" data-_activities="top: 100%;" data-_activities-300="top: 8%;"></div>
+        
         <!-- <div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
             <h2>all numeric properties</h2>
             <p>width, height, padding, font-size, z-index, blah blah blah</p>
         </div> -->
         
-        
+        <div id="contact-me-plaque" class="plaque" data-_activities-600="top: 100%;" data-_activities-900="top: 12%;">
+                                                       
+            <div class="plaque-header">
+                <h2>Contact Information</h2>
+            </div>
+            
+            <div class="plaque-content">
+                <p>
+                You can reach me via <a href="" class="email">email</a>, or get my more <a href="">traditional resume</a>.
+                
+                </p>
+            </div>
+        </div>  
     </div>
 
 
@@ -211,26 +245,8 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <script type="text/javascript">
-        var s = skrollr.init({
-        	constants: {
-                experience: 800,
-                education: 4500,
-                languages: 7000,
-                activities: 9500
-            },
-            beforerender: function(data) {
-                //console.log('beforerender');
-            },
-            render: function() {
-                //console.log('render');
-            },
-            easing: {
-                WTF: Math.random,
-                inverted: function(p) {
-                    return 1-p;
-            }
-        }
-    });
+        
+        
     </script>
 </body>
 
