@@ -40,6 +40,10 @@ RachelMuseum.init = function() {
 	$('#begin-the-tour').click(function() { RachelMuseum.jumpTo('experience'); });
 	$('#arrow-up').click(RachelMuseum.toPrevious);
 	$('#arrow-down').click(RachelMuseum.toNext);
+	$('#frames-museum-experience').click(function() { RachelMuseum.jumpTo('experience')});
+	$('#frames-education').click(function() { RachelMuseum.jumpTo('education')});
+	$('#frames-languages').click(function() { RachelMuseum.jumpTo('languages')});
+	$('#frames-extra-curricular-activities').click(function() { RachelMuseum.jumpTo('activities')});
 	
 };
 RachelMuseum.jumpTo = function(section) {
@@ -50,7 +54,6 @@ RachelMuseum.jumpTo = function(section) {
 
 RachelMuseum.getCurrent = function() {
 	var scroll = $(window).scrollTop();
-	var current;
 	
 	var sectionWLength = new Array();
 	for (var i in RachelMuseum.SECTIONS) {
@@ -88,7 +91,7 @@ RachelMuseum.getCurrent = function() {
 	return {
 		previous: sectionWLength[Math.max(0, min.index-1)].section,
 		current: sectionWLength[min.index].section,
-		next: sectionWLength[Math.min(sectionWLength.length, min.index+1)].section
+		next: sectionWLength[Math.min(sectionWLength.length-1, min.index+1)].section
 	}
 }
 
