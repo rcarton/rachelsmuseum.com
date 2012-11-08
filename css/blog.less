@@ -1,0 +1,91 @@
+@import "constants.less";
+@import "mixins.less";
+
+
+html {
+    font-family: 'museo_sans_500regular', sans-serif;
+}
+
+body {
+    background-image: url(../img/background-side.png);
+    background-attachment: fixed;
+    font-family: 'museo_sans_500regular', sans-serif;
+}
+
+h1, h2, h3, h4, #logo, .menu {
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    .red;
+    
+    a, a:visited, a:active {
+        font-family: 'BebasNeueRegular', sans-serif;
+    }
+}
+
+a, a:visited, a:active {
+    .red;
+}
+
+header {
+    padding-top: 0.9em;
+}
+
+.post {
+    background: white;
+    padding: 1em;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 4px;
+    box-shadow: rgb(226, 226, 226) 2px 2px 0px;
+    
+    header {
+        h1 {
+            margin-top: 0;
+        }
+    }
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 0 1em;
+    
+    &.current_page_item { a, a:visited, a:active { .red; } }
+    a, a:visited, a:active {
+        color: #888;
+        text-decoration: none;
+    }
+}
+
+.sidebar {
+    margin-top: .5em;
+    
+    #corgi {
+        margin-left: -96px;
+        position: relative;
+        left: 50%;
+    }
+    
+    .widget {
+        a, a:visited, a:active {
+            text-decoration: none;
+        }
+    }
+}
+
+#logo {
+    line-height: .85em;
+    text-align: center;
+    margin: 0 0 .5em 0;
+    
+    a {
+        width: 5em;
+        display: inline-block;
+        background-image: url(../img/blog/moustache.png);
+        background-repeat: no-repeat;
+        background-position: 50% 82px;
+        height: 110px;
+    }
+}
