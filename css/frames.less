@@ -1,0 +1,150 @@
+@wirespadding: 50%;
+@wiresfix: -110px;
+
+.frame {
+    left: @wirespadding;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+#wires-top {
+    background-image: url(../img/wires-top.png);
+    width: 119px;
+    height: 41px;
+    left: @wirespadding;
+    z-index: 91;
+    margin-left: @wiresfix - 60px;
+}
+
+#wires {
+    background-image: url(../img/wires.png);
+    width: 119px;
+    height: 300%;
+    left: @wirespadding;
+    margin-left: @wiresfix - 60px;
+    margin-top: 41px;
+    z-index: 90;
+}
+
+#arrow-up, #arrow-down {
+    width: 102px;
+    height: 10%;
+    position: fixed;
+    left: @wirespadding;
+    margin-left: @wiresfix - 52px;
+    z-index: 95;
+    transition: all .25s;
+    -moz-transition: all .25s; /* Firefox 4 */
+    -webkit-transition: all .25s; /* Safari and Chrome */
+    -o-transition: all .25s; /* Opera */
+
+    &:before {
+        width: 0px;
+        height: 0px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        font-size: 0px;
+        line-height: 0px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -10px;
+        content: "";
+    }
+    
+    &:hover {
+        background: #eee;
+        cursor: pointer;
+        &:before { border-top-color: white; border-bottom-color: white; }
+    }
+}
+
+#arrow-up {
+    top: 0px;
+    &:before { border-bottom: 10px solid #cecece; top: 25%; }
+}
+#arrow-down {
+    bottom: 0px;
+    &:before { border-top: 10px solid #cecece; bottom: 25%; }
+}
+
+
+
+@experience-cma-height: 219px;
+@experience-cma-width: 381px;
+
+
+@experience-amam-height: 240px;
+@experience-amam-width: 201px;
+
+@experience-ohc-width: 256px;
+@experience-ohc-height: 156px;
+
+
+@education-oberlin-width: 511px * 0.8;
+@education-oberlin-height: 315px * 0.8;
+
+
+@languages-paris-width: 495px * 0.8;
+@languages-paris-height: 413px * 0.8;
+
+@activities-frame-width: 449px;
+@activities-frame-height: 369px;
+
+@activities-other-width: 326px;
+@activities-other-height: 268px;
+
+
+
+@ratio: 0.65;
+
+.plaque {
+    margin-left: @wiresfix + 310px * @ratio;
+}
+
+#experience-cma {
+    background-image: url(../img/experience-cma.png);
+}
+
+
+#experience-amam {
+    background-image: url(../img/experience-amam.png);
+}
+
+#experience-ohc {
+    background-image: url(../img/experience-ohc.png);
+}
+
+#education-oberlin {
+    background-image: url(../img/education-oberlin.png);
+}
+
+#languages-paris {
+    background-image: url(../img/languages-paris.png);
+}
+
+#activities-frame {
+    background-image: url(../img/activities-frame.png);
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#activities-other {
+    background-image: url(../img/activities-other.png);
+}
+
+@ratio: 0.5;
+@import "frames-variable.less";
+
+@media only screen and (min-width: 800px) {
+    @ratio: 0.75;
+    @import "frames-variable.less";
+}
+
+@media only screen and (min-width: 1250px) {
+    @ratio: 1;
+    @import "frames-variable.less";
+}
