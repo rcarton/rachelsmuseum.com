@@ -70,10 +70,11 @@
 }
 
 
+@frames-width: 707px;
+@frames-height: 719px;
 
 @experience-cma-height: 219px;
 @experience-cma-width: 381px;
-
 
 @experience-amam-height: 240px;
 @experience-amam-width: 201px;
@@ -136,12 +137,23 @@
     background-image: url(../img/activities-other.png);
 }
 
+
+
 @ratio: 0.5;
 @import "frames-variable.less";
+#frames-languages { top: 158px * @ratio + 10px; left: 531px * @ratio + 14px; }
+#frames-education { top: 488px * @ratio + 15px; left: 111px * @ratio + 3px; }
+#frames-extra-curricular-activities { top: 461px * @ratio + 14px; left: 489px * @ratio + 15px; }
+#experience-amam-plaque { margin-top: 239px * @ratio + 75px; }
+#experience-ohc-plaque { margin-top: 495px * @ratio + 86px; }
 
 @media only screen and (min-width: 800px) {
     @ratio: 0.75;
     @import "frames-variable.less";
+    #frames-languages { top: 158px * @ratio + 5px; left: 531px * @ratio + 8px; }
+    #frames-education { top: 488px * @ratio + 15px; left: 111px * @ratio + 3px; }
+    #frames-extra-curricular-activities { top: 461px * @ratio + 12px; left: 489px * @ratio + 9px; }
+    
 }
 
 @media only screen and (min-width: 1250px) {
